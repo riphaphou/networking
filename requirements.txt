@@ -1,0 +1,5 @@
+# Network Simulator - No external dependencies required
+# Uses Python standard library only:
+# - tkinter (included with Python)
+# - cmd (included with Python)
+# - re (included with Python)
