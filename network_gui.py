@@ -77,7 +77,7 @@ class DeviceIcon:
         self._drag_data = {"x": event.x, "y": event.y}
         
         # Redraw connections
-        self.canvas.master.redraw_connections()
+        self.canvas.gui_app.redraw_connections()
 
 
 class NetworkSimulatorGUI:
@@ -128,7 +128,7 @@ class NetworkSimulatorGUI:
         self.canvas.pack(fill=tk.BOTH, expand=True, padx=5, pady=5)
         
         # Store reference for redrawing connections
-        self.canvas.master = self
+        self.canvas.gui_app = self
         
         # Create info panel
         info_frame = ttk.Frame(main_frame, width=300)
